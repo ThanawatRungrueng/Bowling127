@@ -28,11 +28,12 @@ public class Bowliing : MonoBehaviour
         {
            ShootBowl();
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.LeftArrow))
         {
             MoveLeft();
         }
-        if (Input.GetKey(KeyCode.D))
+
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             MoveRight();
         }
