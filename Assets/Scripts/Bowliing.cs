@@ -37,6 +37,10 @@ public class Bowliing : MonoBehaviour
         {
             MoveRight();
         }
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            MoveDown();
+        }
     }
     public void ShootBowl()
     {
@@ -49,6 +53,10 @@ public class Bowliing : MonoBehaviour
     public void MoveRight()
     {
         transform.position += new Vector3(Increment, 0f, 0f);
+    }
+    public void MoveDown()
+    {
+        transform.position += new Vector3(0f, 0f, -Increment);
     }
 
 }
